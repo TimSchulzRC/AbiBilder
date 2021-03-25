@@ -1,0 +1,162 @@
+body {
+  background-color: #424642;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Source Code Pro", monospace;
+  margin: 0;
+  height: 8rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Josefin Sans";
+  margin: 0;
+  margin-top: 2.5rem;
+}
+
+/* Top Part */
+.top-part {
+  background-color: #222831; /* #2228310f1011 */
+  color: #f3f4ed;
+  width: 100vw;
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 3%;
+  padding-top: 10rem;
+}
+
+.heading {
+  vertical-align: middle;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.top-part img {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+}
+
+.jahrgang {
+  padding: 1.5rem;
+  opacity: 0;
+}
+
+/* Image Part */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 1s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.images {
+  opacity: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3%;
+}
+
+.img-box {
+  /* display: inline-block; */
+  height: 320px;
+  padding: 1.5rem;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: all 1500ms;
+}
+
+footer {
+  background-color: #222831;
+  color: #f3f4ed;
+  text-align: center;
+  padding: 0.75rem;
+  bottom: 0;
+  line-height: 0.5;
+}
+
+@media (max-width: 960px) {
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img-box {
+    /* display: inline-block; */
+    height: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    height: 4.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .top-part {
+    height: 80vh;
+    padding-top: 0;
+  }
+
+  .heading {
+    padding: 1rem;
+  }
+
+  .images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .img-box {
+    /* display: inline-block; */
+    height: 35vh;
+    padding: 1rem;
+    padding-top: 5%;
+  }
+
+  .jahrgang {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.75rem;
+  }
+}
+
+@media (orientation: landscape) {
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    height: 7rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .top-part {
+    padding-top: 2rem;
+  }
+
+  .top-part img {
+    opacity: 1;
+    width: 47%;
+    height: auto;
+  }
+}
