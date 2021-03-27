@@ -5,10 +5,16 @@
     <!-- Required meta tags -->
 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-        content="IE=edge">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png"
+        sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png"
+        sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="/favicon/apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
 
     <!-- Bootstrap -->
     <!-- <link
@@ -18,10 +24,10 @@
         crossorigin="anonymous"> -->
 
     <!-- Google Fonts -->
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;0,700;1,400&family=Noto+Sans+SC:wght@400;500;700;900&family=Varela+Round&family=Yusei+Magic&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;700&display=swap"
@@ -29,15 +35,17 @@
 
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 
     <title>Abiturjahrgang 2021 des
         Goethe-Gymnasium
         Reichenbach</title>
 
-    <!-- JQuery -->
+    <!-- Javascript -->
     <script
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
 </head>
 
 <body>
@@ -48,14 +56,17 @@
 
             <h2>Abiturjahrgang 2021 des
                 Goethe-Gymnasium Reichenbach</h2>
+
+            <a href="/images/12.jpg" data-lightbox="top-image"
+                class="jahrgang"><img src="/images/12.jpg" alt=""
+                    class="top-image">
+            </a>
         </div>
-        <div class="jahrgang"><img
-                src="./images/12.jpg" alt="">
-        </div>
+
 
     </div>
 
-    <div class="images"></div>
+    <div class="gallery"></div>
 
     <footer>
         Hosted by Manitu //
@@ -65,8 +76,7 @@
     <script src="js/main.js"></script>
     <script src="js/load_images.js"></script>
     <script src="js/image_io.js"></script>
-    <script
-        src="js/typewriter_effect.js"></script>
+    <script src="js/typewriter_effect.js"></script>
 </body>
 
 </html>

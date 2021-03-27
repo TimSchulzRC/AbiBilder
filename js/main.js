@@ -1,4 +1,4 @@
-$(".images").addClass("fade-in");
+$(".gallery").addClass("fade-in");
 $(".jahrgang").addClass("fade-in");
 
 // const options = {

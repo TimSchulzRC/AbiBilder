@@ -1,14 +1,16 @@
 function createElement(numb) {
   let newImage = document.createElement("img");
+  newImage.classList.add("image");
   newImage.setAttribute("data-src", `images/${numb}.jpg`);
   newImage.setAttribute("alt", "...");
   newImage.setAttribute("loading", "lazy");
 
-  let newDiv = document.createElement("div");
+  let a = document.createElement("a");
+  a.classList.add("img-box");
+  a.setAttribute("href", `images/${numb}.jpg`);
+  a.setAttribute("data-lightbox", "images");
 
-  newDiv.classList.add("img-box");
-
-  document.querySelector(".images").appendChild(newDiv).appendChild(newImage);
+  document.querySelector(".gallery").appendChild(a).appendChild(newImage);
 }
 
 for (i = 1; i <= 12; i++) {
