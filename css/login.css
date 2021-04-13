@@ -1,0 +1,56 @@
+body {
+  text-align: center;
+  display: flex;
+  height: 100vh;
+}
+
+h1 {
+  height: auto;
+}
+
+.content {
+  padding: 5%;
+  margin: auto;
+  text-align: left;
+  vertical-align: middle;
+  width: fit-content;
+}
+
+.wrapper {
+  width: fit-content;
+}
+
+table {
+  margin: 0px;
+}
+
+tr {
+  height: 60px;
+}
+
+label {
+  min-width: 100px;
+  font-size: x-large;
+}
+
+input {
+  background-color: #f3f4ed;
+  height: 30px;
+  border-radius: 20px;
+  border: 0;
+  margin: 5px 0;
+  width: 100%;
+  outline: none;
+  text-align: center;
+}
+
+button {
+  border-radius: 50px;
+  border: none;
+  height: 30px;
+  width: 100%;
+  margin: 5px 0;
+  background-color: #f3f4ed;
+  border: 0;
+  box-shadow: 0;
+}

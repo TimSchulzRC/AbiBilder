@@ -2,8 +2,6 @@
 <html lang="de">
 
 <head>
-    <!-- Required meta tags -->
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,15 +14,7 @@
         href="/favicon/apple-touch-icon.png">
     <meta name="msapplication-TileColor" content="#ffffff">
 
-    <!-- Bootstrap -->
-    <!-- <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-        crossorigin="anonymous"> -->
-
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap"
@@ -33,50 +23,46 @@
         href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;700&display=swap"
         rel="stylesheet">
 
-
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/lightbox.css">
-
-    <title>Abiturjahrgang 2021 des
-        Goethe-Gymnasium
-        Reichenbach</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
 
     <!-- Javascript -->
     <script
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/lightbox-plus-jquery.js"></script>
+
+    <title>Login</title>
 </head>
 
 <body>
-    <div class="top-part">
-        <div class="heading">
-            <h1 id="typedtext">Aget Abi;<br>
-                Code 2021;</h1>
+    <div class="content">
+        <h1>Login</h1>
+        <form>
+            <div class="wrapper">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="user">Agent:</label></td>
+                            <td> <input type="text" name="user""
+                                    style=" text-transform: capitalize;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="passwort">Code:</label></td>
+                            <td><input type="password" name="password">
+                            </td>
+                        </tr>
+                    </tbody>
 
-            <h2>Abiturjahrgang 2021 des
-                Goethe-Gymnasium Reichenbach</h2>
+                </table>
+                <button>Login</button>
+            </div>
 
-            <a href="/images/12.jpg" data-lightbox="top-image"
-                class="jahrgang"><img src="/images/12.jpg" alt=""
-                    class="top-image">
-            </a>
-        </div>
-
-
+        </form>
     </div>
 
-    <div class="gallery"></div>
+    <script src="js/login.js"></script>
 
-    <footer>
-        Hosted by Manitu //
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <script src="js/load_images.js"></script>
-    <script src="js/image_io.js"></script>
-    <script src="js/typewriter_effect.js"></script>
 </body>
 
 </html>
