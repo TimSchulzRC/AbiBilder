@@ -9,7 +9,7 @@ $("form").on("submit", function (e) {
   user = stringToHash(user);
   password = stringToHash(password);
   if (user == loginData.user && password == loginData.password) {
-    window.location.href = "page.html";
+    window.location.href = "bkrfthdf789907dbsgfgrf9ds8g7sdfg79sdgds.html";
   } else {
     alert("Name oder Passwort ist inkorrekt");
   }
