@@ -1,6 +1,6 @@
 body {
-  color: #f3f4ed;
-  background-color: #424642;
+  color: hsl(69, 24%, 94%);
+  background-color: hsl(120, 3%, 27%);
   padding: 0;
   margin: 0;
   font-family: "Source Code Pro", monospace;
@@ -31,6 +31,7 @@ h2 {
 }
 
 .heading {
+  opacity: 0;
   vertical-align: middle;
   padding: 1.5rem;
   text-align: left;
