@@ -1,11 +1,11 @@
 const loginData = {
-  user: 96360,
-  password: 1537277,
+  user: 1537277,
+  password: 96360,
 };
 
 $("form").on("submit", function (e) {
   let user = $("input[name='user']").val().toLowerCase();
-  let password = $("input[name='password']").val();
+  let password = $("input[name='password']").val().toLowerCase();
   user = stringToHash(user);
   password = stringToHash(password);
   if (user == loginData.user && password == loginData.password) {
