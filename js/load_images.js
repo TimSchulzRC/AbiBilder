@@ -1,6 +1,6 @@
 function createElement(numb) {
   let newImage = document.createElement("img");
-  newImage.classList.add("image");
+  newImage.classList.add("gallery-img");
   newImage.setAttribute("data-src", `images/${numb}.jpg`);
   newImage.setAttribute("alt", "...");
   newImage.setAttribute("loading", "lazy");
