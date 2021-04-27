@@ -7,14 +7,6 @@ body {
   /* font-family: "Josefin Sans"; */
 }
 
-h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  font-family: "Source Code Pro", monospace;
-  margin: 0;
-  height: 8rem;
-}
-
 img {
   border-radius: 20px;
   transition: 1s;
@@ -30,6 +22,14 @@ img:hover {
   vertical-align: bottom;
   padding: 5%;
   padding-top: 10rem;
+}
+
+.top-part h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Source Code Pro", monospace;
+  margin: 0;
+  height: 8rem;
 }
 
 .top-part h2 {
@@ -71,6 +71,7 @@ img:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   max-width: 100%;
+  padding-bottom: 3rem;
 }
 
 .col {
@@ -128,7 +129,7 @@ footer {
 }
 
 @media (max-width: 540px) {
-  h1 {
+  .top-part h1 {
     font-size: 2rem;
     font-weight: 500;
     height: 4.5rem;
@@ -172,7 +173,14 @@ footer {
   h1 {
     font-size: 3rem;
     font-weight: 500;
+  }
+
+  .top-part h1 {
     height: 7rem;
+  }
+
+  .mottowoche h1 {
+    margin: 0;
   }
 
   h2 {
