@@ -21,7 +21,7 @@ img:hover {
 .top-part {
   vertical-align: bottom;
   padding: 5%;
-  padding-top: 10rem;
+  padding-top: 3rem;
 }
 
 .top-part h1 {
@@ -61,7 +61,7 @@ img:hover {
 /* Mottowoche */
 .mottowoche {
   color: hsl(69, 24%, 94%);
-  background-color: hsl(120, 3%, 27%);
+  background-color: hsl(231, 5%, 29%);
   padding: 5%;
   opacity: 0;
 }
@@ -74,8 +74,13 @@ img:hover {
   padding-bottom: 3rem;
 }
 
+.freitag {
+  padding-bottom: 0;
+}
+
 .col {
   max-width: 100%;
+  transition: 1.5s;
 }
 
 .motto-image {
@@ -83,6 +88,51 @@ img:hover {
 }
 
 /* Image Part */
+
+.media-selector {
+  opacity: 0;
+  height: 50px;
+  display: flex;
+  background-color: hsl(216, 18%, 16%);
+  color: hsl(231, 5%, 50%);
+}
+
+.image-selector-wrapper,
+.video-selector-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.image-selector,
+.video-selector {
+  background-color: hsl(231, 5%, 29%);
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+}
+
+.image-selector h2,
+.video-selector h2 {
+  margin: 0;
+  padding: 15px;
+}
+
+.selected > div > h2 {
+  margin: 0;
+  padding: 15px;
+  color: hsl(69, 24%, 94%);
+}
+
+.selected {
+  background-color: hsl(231, 5%, 29%);
+}
+
+.selected > div {
+  background-color: hsl(216, 18%, 16%);
+  border-radius: 20px 20px 0 0;
+}
+
 .gallery {
   opacity: 0;
   display: grid;
@@ -115,57 +165,24 @@ footer {
   text-align: center;
   padding: 0.75rem;
   bottom: 0;
-  line-height: 0.5;
+  line-height: 1.5;
   font-weight: 300;
 }
 
 @media (max-width: 960px) {
+  .media-selector {
+    height: 60px;
+  }
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .child {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (max-width: 540px) {
-  .top-part h1 {
-    font-size: 2rem;
-    font-weight: 500;
-    height: 4.5rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-
-  .top-part {
-    vertical-align: bottom;
-  }
-
-  .heading {
-    padding: 1rem;
-  }
-
-  .container {
-    padding: 1rem;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .img-box {
-    padding: 1rem;
-    height: 35vh;
-  }
-
-  .jahrgang {
-    padding-top: 2rem;
-  }
-
-  footer {
-    font-size: 0.6rem;
+  .child :first-child {
+    grid-column: 1 / -1;
   }
 }
 
@@ -177,6 +194,7 @@ footer {
 
   .top-part h1 {
     height: 7rem;
+    padding-top: 4rem;
   }
 
   .mottowoche h1 {
@@ -186,6 +204,10 @@ footer {
   h2 {
     font-size: 2rem;
     font-weight: 400;
+  }
+
+  .media-selector {
+    height: 70px;
   }
 
   .img-box {
