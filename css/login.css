@@ -2,10 +2,12 @@ body {
   text-align: center;
   display: flex;
   height: 100vh;
+  font-size: 2rem;
 }
 
 h1 {
   height: auto;
+  margin: 0;
 }
 
 .content {
@@ -35,6 +37,7 @@ label {
 
 input {
   background-color: #f3f4ed;
+  color: hsl(216, 18%, 16%);
   height: 30px;
   border-radius: 20px;
   border: 0;
@@ -42,6 +45,7 @@ input {
   width: 100%;
   outline: none;
   text-align: center;
+  font-weight: 700;
 }
 
 button {
@@ -51,6 +55,22 @@ button {
   width: 100%;
   margin: 5px 0;
   background-color: #f3f4ed;
+  color: hsl(216, 18%, 16%);
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
   border: 0;
   box-shadow: 0;
+  transition: all 200ms;
+}
+
+button:focus {
+  outline: none;
+  transform: scale(1.1);
+  transition: all 200ms;
+  box-shadow: 0 0 0 5px hsl(216, 18%, 16%), 0 0 0 7px #f3f4ed;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: all 200ms;
 }

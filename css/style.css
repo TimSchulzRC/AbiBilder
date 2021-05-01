@@ -75,7 +75,7 @@ img:hover {
 }
 
 .freitag {
-  padding-bottom: 0;
+  padding-bottom: 1.2rem;
 }
 
 .col {
@@ -95,12 +95,14 @@ img:hover {
   display: flex;
   background-color: hsl(216, 18%, 16%);
   color: hsl(231, 5%, 50%);
+  border: 0px;
 }
 
 .image-selector-wrapper,
 .video-selector-wrapper {
   width: 100%;
   height: 100%;
+  border: 0px;
 }
 
 .image-selector,
@@ -115,17 +117,18 @@ img:hover {
 .image-selector h2,
 .video-selector h2 {
   margin: 0;
-  padding: 15px;
+  padding: 12px;
 }
 
 .selected > div > h2 {
   margin: 0;
-  padding: 15px;
+  padding: 12px;
   color: hsl(69, 24%, 94%);
 }
 
 .selected {
   background-color: hsl(231, 5%, 29%);
+  border: 0px;
 }
 
 .selected > div {
@@ -183,6 +186,47 @@ footer {
 
   .child :first-child {
     grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 540px) {
+  .top-part h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    height: 4.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .top-part {
+    vertical-align: bottom;
+  }
+
+  .heading {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .img-box {
+    padding: 1rem;
+    height: 35vh;
+  }
+
+  .jahrgang {
+    padding-top: 2rem;
+  }
+
+  footer {
+    font-size: 0.6rem;
   }
 }
 
