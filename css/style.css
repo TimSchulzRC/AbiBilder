@@ -5,6 +5,10 @@ body {
   margin: 0;
   font-family: "Source Code Pro", monospace;
   /* font-family: "Josefin Sans"; */
+  text-align: left;
+  display: unset;
+  height: unset;
+  font-size: unset;
 }
 
 img {
@@ -149,6 +153,7 @@ img:hover {
   width: 100%;
   opacity: 0;
   transition: 1.2s;
+  object-fit: cover;
 }
 
 .img-box {
