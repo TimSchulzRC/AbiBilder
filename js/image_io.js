@@ -15,8 +15,6 @@ function preloadImage(img) {
 
 const io = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
-    console.log("hey");
-
     if (entry.isIntersecting) {
       preloadImage(entry.target);
       entry.target.classList.add("fade-in");
